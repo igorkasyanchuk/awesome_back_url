@@ -5,11 +5,11 @@ Redirect to proper back URL for your Rails applications. In case if you want to 
 ## Usage
 
 ```ruby
-    awesome_back_path(except: /\/new|\/edit/, fallback: users_path), '/users'
-    awesome_back_path('/path', except: /\/new|\/edit/, fallback: '/users'), '/path'
-    awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users'), '/users'
-    awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users'), '/users'
-    awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users'), '/users'
+    link_to 'Back', awesome_back_path(except: /\/new|\/edit/, fallback: users_path) # returns '/users'
+    link_to 'Back', awesome_back_path('/path', except: /\/new|\/edit/, fallback: '/users') # returns  '/path'
+    link_to 'Back', awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
+    link_to 'Back', awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
+    link_to 'Back', awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users') # returns '/users'
 ```
 
 ## Installation
