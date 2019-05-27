@@ -1,10 +1,19 @@
-# AwesomeBackUrl
-Short description and motivation.
+# awesome_back_url
+
+Redirect to proper back URL for your Rails applications. In case if you want to redirect user not to "edit" or "new" page from "show" after creation, but to "index" or other specific URL.
 
 ## Usage
-How to use my plugin.
+
+```ruby
+    awesome_back_path(except: /\/new|\/edit/, fallback: users_path), '/users'
+    awesome_back_path('/path', except: /\/new|\/edit/, fallback: '/users'), '/path'
+    awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users'), '/users'
+    awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users'), '/users'
+    awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users'), '/users'
+```
 
 ## Installation
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -16,13 +25,10 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install awesome_back_url
-```
-
 ## Contributing
-Contribution directions go here.
+
+You are welcome to contribute.
 
 ## License
+
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
