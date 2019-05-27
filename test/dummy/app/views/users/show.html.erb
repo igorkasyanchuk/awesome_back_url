@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @user.age %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<br/>
+<%= link_to 'Back (back)', :back %>
+<br/>
+<%= link_to 'Back (awesome)', awesome_back_path(except: /\/new|\/edit/, fallback: users_path) %>
