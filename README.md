@@ -19,11 +19,12 @@ Samples:
 
 
 ```ruby
-    link_to 'Back', awesome_back_path(except: /\/new|\/edit/, fallback: users_path) # returns '/users'
-    link_to 'Back', awesome_back_path('/path', except: /\/new|\/edit/, fallback: '/users') # returns  '/path'
-    link_to 'Back', awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
-    link_to 'Back', awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
-    link_to 'Back', awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users') # returns '/users'
+link_to 'Back', awesome_back_path(except: /\/new|\/edit/, fallback: users_path) # returns '/users'
+link_to 'Back', awesome_back_path('/path', except: /\/new/, fallback: '/users') # returns  '/path'
+link_to 'Back', awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
+link_to 'Back', awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users') # returns '/users'
+link_to 'Back', awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users') # returns '/users'
+link_to 'Back', awesome_back_url('/path', fallback: '/users') # returns '/path'    
 ```
 
 ## Installation
