@@ -4,6 +4,20 @@ Redirect to proper back URL for your Rails applications. In case if you want to 
 
 ## Usage
 
+Options:
+
+```ruby
+awesome_back_path(path = request.referrer, only: nil, except: nil, fallback: :back)
+```
+
+* "path" - destination to redirect user
+* "only" -  regexp of allowed paths
+* "except" - regexp of disallowed paths
+* "fallback" - if path is incorrect (not allowed or not in allowed) redirect to this url.
+
+Samples:
+
+
 ```ruby
     link_to 'Back', awesome_back_path(except: /\/new|\/edit/, fallback: users_path) # returns '/users'
     link_to 'Back', awesome_back_path('/path', except: /\/new|\/edit/, fallback: '/users') # returns  '/path'
