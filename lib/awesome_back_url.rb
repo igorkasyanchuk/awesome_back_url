@@ -32,5 +32,7 @@ module AwesomeBackUrl
         fallback
       end
     end
+
+    alias :awesome_back_url :awesome_back_path
   end
 end

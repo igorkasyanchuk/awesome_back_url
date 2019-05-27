@@ -7,6 +7,7 @@ class AwesomeBackUrl::Test < Minitest::Test
     assert_equal subject.awesome_back_path('/path/new', except: /\/new|\/edit/, fallback: '/users'), '/users'
     assert_equal subject.awesome_back_path('/path/edit', except: /\/new|\/edit/, fallback: '/users'), '/users'
     assert_equal subject.awesome_back_path('/path', only: /\/new|\/edit/, fallback: '/users'), '/users'
+    assert_equal subject.awesome_back_url('/path', only: /\/new|\/edit/, fallback: '/users'), '/users'
   end
 
   private
