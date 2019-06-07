@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    awesome_back_url (0.1.0)
+    awesome_back_url (0.1.2)
       rails
 
 GEM

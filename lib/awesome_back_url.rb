@@ -10,6 +10,7 @@ module AwesomeBackUrl
 
     def awesome_back_path(path = request.referrer, only: nil, except: nil, fallback: :back)
       return fallback if path.blank?
+      return fallback if !request.path.blank? && path =~ /#{request.path}$/
 
       if only.present?
         raise "Only regexp is allowed for \"only\" parameter" unless only.is_a?(Regexp)
