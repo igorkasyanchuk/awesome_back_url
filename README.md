@@ -1,6 +1,7 @@
 # awesome_back_url
 
 [![RailsJazz](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/my_other.svg?raw=true)](https://www.railsjazz.com)
+[![https://www.patreon.com/igorkasyanchuk](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/patron.svg?raw=true)](https://www.patreon.com/igorkasyanchuk)
 
 Redirect to proper back URL for your Rails applications. In case if you want to redirect user not to "edit" or "new" page from "show" after creation, but to "index" or other specific URL.
 
