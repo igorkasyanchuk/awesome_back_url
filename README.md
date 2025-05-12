@@ -2,7 +2,8 @@
 
 [![RailsJazz](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/my_other.svg?raw=true)](https://www.railsjazz.com)
 [![https://www.patreon.com/igorkasyanchuk](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/patron.svg?raw=true)](https://www.patreon.com/igorkasyanchuk)
-[![Listed on OpenSource-Heroes.com](https://opensource-heroes.com/badge-v1.svg)](https://opensource-heroes.com/r/igorkasyanchuk/awesome_back_url)
+
+[!["Buy Me A Coffee"](https://github.com/igorkasyanchuk/get-smart/blob/main/docs/snapshot-bmc-button-small.png?raw=true)](https://buymeacoffee.com/igorkasyanchuk)
 
 Redirect to proper back URL for your Rails applications. In case if you want to redirect user not to "edit" or "new" page from "show" after creation, but to "index" or other specific URL.
 
@@ -55,3 +56,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 [<img src="https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/more_gems.png?raw=true"
 />](https://www.railsjazz.com/?utm_source=github&utm_medium=bottom&utm_campaign=awesome_back_url)
+
+[!["Buy Me A Coffee"](https://github.com/igorkasyanchuk/get-smart/blob/main/docs/snapshot-bmc-button.png?raw=true)](https://buymeacoffee.com/igorkasyanchuk)
